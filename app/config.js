@@ -29,6 +29,34 @@ module.exports = {
             input: 'axios.js',
             output: 'src/utils/axios.js',
         },
+        {
+            input: 'config/webpack.common.js',
+            output: 'config/webpack.common.js',
+        },
+        {
+            input: 'config/webpack.dev.js',
+            output: 'config/webpack.dev.js',
+        },
+        {
+            input: 'config/webpack.prod.js',
+            output: 'config/webpack.prod.js',
+        },
+        {
+            input: 'config/utils.js',
+            output: 'config/utils.js',
+        },
+        {
+            input: 'config/openBrowser.js',
+            output: 'config/openBrowser.js',
+        },
+        {
+            input: 'config/openPage.js',
+            output: 'config/openPage.js',
+        },
+        {
+            input: 'config/start.js',
+            output: 'config/start.js',
+        },
     ],
     filesToRender: [
         {
