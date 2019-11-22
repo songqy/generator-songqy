@@ -1,3 +1,3 @@
 # generator-songqy
 
-a yo generator for test
+a yeoman generator for test

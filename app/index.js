@@ -2,6 +2,7 @@
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
+const mkdirp = require('mkdirp');
 
 const config = require('./config');
 
@@ -21,7 +22,7 @@ module.exports = class extends Generator {
 
     writing() {
         const templateData = {
-            appname: this.props.appname,
+            appname: `"${this.props.appname}"`,
         };
 
         const copy = (input, output) => {
@@ -36,6 +37,10 @@ module.exports = class extends Generator {
             );
         };
 
+        config.dirsToCreate.forEach(item => {
+            mkdirp(item);
+        });
+        
         config.filesToCopy.forEach(file => {
             copy(file.input, file.output);
         });
@@ -43,6 +48,7 @@ module.exports = class extends Generator {
         config.filesToRender.forEach(file => {
             copyTpl(file.input, file.output, templateData);
         });
+
     }
 
     install() {

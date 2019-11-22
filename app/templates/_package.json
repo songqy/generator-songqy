@@ -1,5 +1,5 @@
 {
-  "name": <%= appname %>,
+  "name": <%- appname %>,
   "private": true,
   "sideEffects": true,
   "scripts": {

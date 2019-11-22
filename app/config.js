@@ -14,12 +14,20 @@ module.exports = {
     ],
     filesToCopy: [
         {
-            input: 'all-t.js',
-            output: 'all-t.js',
+            input: 'index.js',
+            output: 'src/index.js',
         },
         {
-            input: 'dummyfile.txt',
-            output: 'dummyfile.txt',
+            input: 'gitignore',
+            output: '.gitignore',
+        },
+        {
+            input: 'README.md',
+            output: 'README.md',
+        },
+        {
+            input: 'axios.js',
+            output: 'src/utils/axios.js',
         },
     ],
     filesToRender: [
@@ -27,5 +35,16 @@ module.exports = {
             input: '_package.json',
             output: 'package.json',
         },
+    ],
+    dirsToCreate: [
+        'config',
+        'src/models',
+        'src/router',
+        'src/routes',
+        'src/utils',
+        'src/services',
+        'src/components',
+        'src/assets',
+        'public',
     ],
 };
