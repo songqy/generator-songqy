@@ -14,10 +14,6 @@ module.exports = {
     ],
     filesToCopy: [
         {
-            input: 'index.js',
-            output: 'src/index.js',
-        },
-        {
             input: 'gitignore',
             output: '.gitignore',
         },
@@ -26,8 +22,20 @@ module.exports = {
             output: 'README.md',
         },
         {
-            input: 'axios.js',
+            input: 'src/index.js',
+            output: 'src/index.js',
+        },
+        {
+            input: 'src/router/index.js',
+            output: 'src/router/index.js',
+        },
+        {
+            input: 'src/utils/axios.js',
             output: 'src/utils/axios.js',
+        },
+        {
+            input: 'src/utils/middleTransformer.js',
+            output: 'src/utils/middleTransformer.js',
         },
         {
             input: 'config/webpack.common.js',
